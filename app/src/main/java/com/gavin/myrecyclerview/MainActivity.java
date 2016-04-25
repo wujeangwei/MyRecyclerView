@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
         mImg = (ImageView) findViewById(R.id.id_content);
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = (MyRecyclerView) findViewById(R.id.id_recyclerview_horizontal);
         //设置布局管理器
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(linearLayoutManager);
         //设置适配器
         mAdapter = new GalleryAdapter(this, mDatas);

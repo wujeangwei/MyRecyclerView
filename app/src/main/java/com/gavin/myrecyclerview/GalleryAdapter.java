@@ -47,7 +47,6 @@ public class GalleryAdapter extends
         }
 
         ImageView mImg;
-        TextView mTxt;
     }
 
     @Override

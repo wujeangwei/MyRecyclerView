@@ -2,28 +2,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="horizontal" >
 
-    <FrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" >
-
-        <ImageView
-            android:id="@+id/id_content"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher" />
-    </FrameLayout>
+    <ImageView
+        android:id="@+id/id_content"
+        android:layout_width="480dp"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher"/>
 
     <com.gavin.myrecyclerview.MyRecyclerView
         android:id="@+id/id_recyclerview_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_gravity="bottom"
+        android:layout_height="match_parent"
         android:background="#ffffff"
+        android:layout_toRightOf="@id/id_content"
         android:scrollbars="none" />
 
 </LinearLayout>
